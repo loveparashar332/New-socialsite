@@ -1,0 +1,27 @@
+<style>
+    #bottom-details {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightseagreen;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 20px;
+    }
+    #bottom-details a:hover {
+        text-decoration: underline;
+    }
+    </style>
+<div class="footer fixed-bottom" id="bottom-details" style="display: none;">
+    <i class="ti-comments-smiley"></i>
+    Hello this is site made by King love parashar. Hope you like it.</a>
+</div>
+<script>
+    window.addEventListener("load", function () {
+        if (window.location.pathname.search("pro-versions") == -1) {
+            document.getElementById("bottom-details").style.display = "";
+        }
+    });
+</script>
